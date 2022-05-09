@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="autor" content="Priscilla Aniboleti">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <img src="/Imagens/logoAlura.png" alt="Logo da alura com inicial da letra a">
+    </header>
+    <main class="main">
+        <section>
+            <textarea class="input-texto" cols="40" rows="6" placeholder="digite sua mensagem: "></textarea>
+            <div>
+                <h6 class="informacao">Escreva aqui sua mensagem para ela se tornar secreta (não pode usar caracteres especiais nem acentos.)</h6>
+            </div>
+            <div class="botoes">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Criptografar
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Descriptografar
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="mensagem" cols="18" rows="8"></textarea>
+        </section>
+    </main>
+    <div id="rodape">
+        <footer>
+            <p id="info"> 
+                
+                <script> 
+                    var timestamp = new Date();
+                    document.getElementById('info').innerHTML = timestamp.getFullYear();
+                </script> 
+                  &copy;Priscilla Aniboleti 
+
+                <a href="https://www.linkedin.com/in/priscilla-aniboleti-094b51235/" target="_blank" ><img class="img-footer" src="/Imagens/logoLinkedin.png" alt="Link para o linkedin da desenvolvedora"></a>
+                <a href="https://github.com/Pripii" target="_blank" ><img class="img-footer" src="/Imagens/logoGithub.png"alt="Link para o github da desenvolvedora"></a>
+            </p>    
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
